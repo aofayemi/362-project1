@@ -22,3 +22,10 @@ html {
    color: #ff0000;
    background-color: purple;
 }
+
+img {
+  display: block;
+  max-width: 40%;
+  align-content: center;
+  padding: 5%;
+}
