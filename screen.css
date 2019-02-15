@@ -35,3 +35,10 @@ h2 {
   border: black;
   font-weight: bold;
 }
+
+p {
+  font-size: 1.125em;   /* 18px */
+  line-height: 1.2em;   /* 18 * 120% = 21.6px/18px */
+  padding-left: 1.2em;  /* 18 * 120% = 21.6px/18px */
+  padding-right: 1.2em; /* 18 * 120% = 21.6px/18px */
+}
