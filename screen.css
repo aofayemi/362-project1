@@ -13,3 +13,12 @@ html {
   font-size: 1.125em;
 }
 */
+/*About element styles*/
+.intro{
+   text-align: center;
+   font-size: 50px;
+   font-weight: bold;
+   padding: 5%;
+   color: #ff0000;
+   background-color: purple;
+}
