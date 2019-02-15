@@ -46,3 +46,13 @@ p {
 body {
   background-color: aliceblue;
 }
+
+/*Responsive image Style*/
+/*
+@media screen and(min-width: 600px) {
+  .img {
+    display: flex;
+    flex-flow: row wrap-reverse;
+  }
+*/
+}
