@@ -42,3 +42,7 @@ p {
   padding-left: 1.2em;  /* 18 * 120% = 21.6px/18px */
   padding-right: 1.2em; /* 18 * 120% = 21.6px/18px */
 }
+
+body {
+  background-color: aliceblue;
+}
