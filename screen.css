@@ -50,13 +50,8 @@ label {
 /*Responsive image Style*/
 img {
   display: block;
-  max-width: 33.333%;
+  max-width: 50%;
   align-content: center;
-}
-.images {
-  background-color: #222;
-  overflow:auto;
-
 }
 
 .images li {
@@ -64,15 +59,19 @@ img {
   padding: 5px;
 }
 @media screen and(min-width: 600px) {
-  .img {
-    display: flex;
-    flex-flow: row wrap-reverse;
+  figcaption {
+    clear: both;
   }
 
-  .image li {
-    flex: 1 0 auto;
-    float: left;
-    width: 50%;
-  }
+}
+
+  @@media screen and (min-width: 1000) {
+
+
+
+    figcaption {
+      clear:both;
+    }
+
 
 }
