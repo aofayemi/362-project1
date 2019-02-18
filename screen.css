@@ -8,12 +8,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
-/*
-html {
-  font-size: 1.125em;
-}
-*/
+
 /*About element styles*/
+
+html {
+  font-family: Arial, sans-serif;
+}
 .intro{
    text-align: center;
    font-size: 50px;
@@ -23,12 +23,6 @@ html {
    background-color: purple;
 }
 
-img {
-  display: block;
-  max-width: 40%;
-  align-content: center;
-  padding: 5%;
-}
 
 h2 {
   padding: 1.2em;       /* 18 * 120% = 21.6px/18px */
@@ -38,7 +32,6 @@ h2 {
 
 p {
   font-size: 1.125em;   /* 18px */
-  line-height: 1.2em;   /* 18 * 120% = 21.6px/18px */
   padding-left: 1.2em;  /* 18 * 120% = 21.6px/18px */
   padding-right: 1.2em; /* 18 * 120% = 21.6px/18px */
 }
@@ -47,12 +40,39 @@ body {
   background-color: aliceblue;
 }
 
+/*Forms*/
+input,
+label {
+  display: block;
+  box-sizing: border-box;
+}
+
 /*Responsive image Style*/
-/*
+img {
+  display: block;
+  max-width: 33.333%;
+  align-content: center;
+}
+.images {
+  background-color: #222;
+  overflow:auto;
+
+}
+
+.images li {
+  box-sizing: border-box;
+  padding: 5px;
+}
 @media screen and(min-width: 600px) {
   .img {
     display: flex;
     flex-flow: row wrap-reverse;
   }
-*/
+
+  .image li {
+    flex: 1 0 auto;
+    float: left;
+    width: 50%;
+  }
+
 }
