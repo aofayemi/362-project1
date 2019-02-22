@@ -7,10 +7,10 @@
   }
 
   document.addEventListener('DOMContentLoaded', function(){
-    var email=document.querySelector('#email');
-    var phone=document.querySelector('#telephone');
-    var signup=document.querySelector('#signup');
-    var submit=.document.querySelector('#submit');
+    //select the necessary elements from the DOM
+    var email_input=document.querySelector('#email');
+    var telephone_input=document.querySelector('#telephone');
+    var signup_submit=document.querySelector('#signup');
     var ph=false;
     var em=false;
 
@@ -20,7 +20,7 @@
     submit.addEventListener('focus', focus);
     signup.addEventListener('focus', focus);
 
-    //Disable signup button if either email or phone number is filled
+    //Disable signup button if either email or phone number is filled.
     function check(){
       if (ph === true || em === true){
 
@@ -36,7 +36,7 @@
 
   });
 
-    //check if email is valid
+    //Email validity function
     function checkEmail(email){
      var em = /^[^@]+@[^@]+$/g;
       //remove whitespace
