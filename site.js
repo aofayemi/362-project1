@@ -44,18 +44,22 @@
     var email_input=document.querySelector('#email');
     var telephone_input=document.querySelector('#telephone');
     var signup_submit=document.querySelector('#signup');
+    var ph = false;
+    var em = false;
+
+    //listen for keyup event anywhere in the formed
+    signup_form.addEventListener('keyup', function(){
+      var contact_value = contact_input.value;
+      //Disable signup button if either email or phone number is filled.
+        if (ph === true || em === true){
 
 
-    //Disable signup button if either email or phone number is filled.
-    function check(){
-      if (ph === true || em === true){
+        signup_input.removeAttribute('disabled')
+        else{
+          signup_input.setAttribute('disabled', 'disabled');}
+        }
 
-
-      signup.removeAttribute('disabled')
-      else{
-        signup.setAttribute('disabled', 'disabled');}
-      }
-    }
+    })
 
 
   });
