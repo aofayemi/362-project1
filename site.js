@@ -53,14 +53,18 @@
         if (ph === true || em === true){
 
 
-        signup_input.removeAttribute('disabled')
+        signup_submit.removeAttribute('disabled')
         else{
-          signup_input.setAttribute('disabled', 'disabled');}
+          var contact_error = document.querySelector('#contact-error');
+          if(contact_value.length > 10 && contact_error.innerText.length === 0) {
+            contact_error.inner' = 'You need a ten-digit phone or valid email address.';
+          }
+          signup_submit.setAttribute('disabled', 'disabled');
         }
 
-    })
+    });
 
 
   });
 
-})();
+}());
