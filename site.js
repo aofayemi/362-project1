@@ -6,9 +6,15 @@
     return;
   }
 
+  function eq(value,condition) {
+    return value === condition;
+  }
 
-
-
+  //Data cleanup function
+  function clean_nonnumber(value) {
+    // Remove non-digit and return values
+    return value.replace(/\D/g, '');
+  }
 
 
       //Email validity function
