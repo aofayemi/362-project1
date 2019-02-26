@@ -16,6 +16,11 @@
     return value.replace(/\D/g, '');
   }
 
+  //Remove country trip_us_country_code
+  function strip_us_country_code(value) {
+    return value.replace(/^1/,'');
+  }
+
 
       //Email validity function
       function checkEmail(email){
@@ -28,7 +33,7 @@
             em = false;
           }
 
-        });
+        }
 
         //Check for valid phone Number
         function validate_us_phone(value){
@@ -53,18 +58,20 @@
         if (ph === true || em === true){
 
 
-        signup_submit.removeAttribute('disabled')
+        signup_submit.removeAttribute('disabled');
         else{
+          //show user error message
           var contact_error = document.querySelector('#contact-error');
           if(contact_value.length > 10 && contact_error.innerText.length === 0) {
-            contact_error.inner' = 'You need a ten-digit phone or valid email address.';
+            contact_error.innerText = 'You need a ten-digit phone or valid email address.';
           }
-          signup_submit.setAttribute('disabled', 'disabled');
+          //Redisable submit button if it is unvalid
+          signup_submit.setAttribute('disabled', 'disabled');}
         }
 
     });
 
-
+    // End of DOMContentLoaded
   });
-
+  //End of IIFE
 }());
