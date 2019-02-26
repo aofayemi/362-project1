@@ -14,11 +14,6 @@
     var ph=false;
     var em=false;
 
-    console.log('OMG the DOM is loaded!!!!');
-    email.addEventListener('focus', focus);
-    phone.addEventListener('focus', focus);
-    submit.addEventListener('focus', focus);
-    signup.addEventListener('focus', focus);
 
     //Disable signup button if either email or phone number is filled.
     function check(){
@@ -26,9 +21,7 @@
 
 
       signup.removeAttribute('disabled')
-      submit.removeAttribute('disabled');}
       else{
-        submit.setAttribute('disabled', 'disabled')
         signup.setAttribute('disabled', 'disabled');}
       }
     }
