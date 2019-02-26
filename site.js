@@ -8,6 +8,7 @@
 
   document.addEventListener('DOMContentLoaded', function(){
     //select the necessary elements from the DOM
+    var signup_input = document.querySelector('signup-form');
     var email_input=document.querySelector('#email');
     var telephone_input=document.querySelector('#telephone');
     var signup_submit=document.querySelector('#signup');
