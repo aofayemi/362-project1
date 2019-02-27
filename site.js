@@ -24,7 +24,7 @@
   }
 
   function clean_whitespace(value) {
-    return value.whitespace(/\s/g, '');
+    return value.replace(/\s/g, '');
   }
 
   // All purpose validate function. It takes a value,
