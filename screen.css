@@ -18,9 +18,7 @@ https://www.modularscale.com/?18&px&1.618
 
 /*About element styles*/
 
-html {
-  font-family: Arial, sans-serif;
-}
+
 .intro{
    text-align: center;
    font-size: 50px;
@@ -39,12 +37,12 @@ h2 {
 
 p {
   font-size: 1.125em;   /* 18px */
-  padding-left: 1.2em;  /* 18 * 120% = 21.6px/18px */
-  padding-right: 1.2em; /* 18 * 120% = 21.6px/18px */
+  padding-left: 1.22222222em;  /* 18 * 120% = 21.6px/18px */
+  padding-right: 1.2222222em; /* 18 * 120% = 21.6px/18px */
 }
 
 body {
-  background-color: aliceblue;
+  background-color: #7fffd4;
 }
 
 /*Forms*/
@@ -52,12 +50,28 @@ input,
 label {
   display: block;
   box-sizing: border-box;
+
 }
+
+input {
+  padding-left: 1.222222em;   /* 22 /18 = 1.2222 */
+  margin: 0;
+  line-height: inherit;
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+input[type="submit"]{
+  background-color: rgba(67,176,183,8.0);
+}
+
 
 /*Responsive image Style*/
 img {
   display: block;
   max-width: 50%;
+  padding: 0.5em;
 }
 
 .images li {
