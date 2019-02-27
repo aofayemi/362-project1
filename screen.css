@@ -18,7 +18,10 @@ https://www.modularscale.com/?18&px&1.618
 
 /*About element styles*/
 
-
+html {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1.25em;
+}
 .intro{
    text-align: center;
    font-size: 50px;
@@ -28,9 +31,19 @@ https://www.modularscale.com/?18&px&1.618
    background-color: purple;
 }
 
+#info {
+  font-size: 1.222em;
+  padding: 1.2222em;
+}
 
-h2 {
-  padding: 1.2em;       /* 18 * 120% = 21.6px/18px */
+#foot {
+  padding-left: 1.222em;
+  padding-bottom: 0.2em;
+
+}
+
+
+h2 {      /* 18 * 120% = 21.6px/18px */
   border: black;
   font-weight: bold;
 }
@@ -50,10 +63,12 @@ input,
 label {
   display: block;
   box-sizing: border-box;
+  padding-top: 3%;
 
 }
 
 input {
+  padding: 1.222222em; /* 22/18 */
   padding-left: 1.222222em;   /* 22 /18 = 1.2222 */
   margin: 0;
   line-height: inherit;
@@ -66,19 +81,26 @@ input[type="submit"]{
   background-color: rgba(67,176,183,8.0);
 }
 
+input[="submit"] {
+  background-color: rgba(255, 152, 85, 5);
+}
+
 
 /*Responsive image Style*/
 img {
   display: block;
   max-width: 50%;
-  padding: 0.5em;
 }
 
 .images li {
   box-sizing: border-box;
-  padding: 5px;
+  padding-left: 1.2em;
 }
 @media screen and(min-width: 600px) {
+  img {
+    display: block;
+    max-width: 50%;
+  }
 
   figcaption {
     clear: both;
