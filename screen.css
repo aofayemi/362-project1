@@ -78,7 +78,7 @@ input {
 }
 
 input[type="submit"]{
-  background-color: rgba(67,176,183,8.0);
+  background-color: #0F27DB;
 }
 
 input[="submit"] {
