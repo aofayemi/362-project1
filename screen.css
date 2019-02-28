@@ -20,7 +20,7 @@ https://www.modularscale.com/?18&px&1.618
 
 html {
   font-family: 'Merriweather', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.25em;   /* 22 / 18 = 1.222222 */
 }
 .intro {
     text-align: center;
@@ -33,11 +33,11 @@ html {
 
 #info {
   font-size: 1.222em;
-  padding: 1.2222em;
+  padding: 1.2222em;  /* 22 / 18 = 1.2222222222 */
 }
 
 #foot {
-  padding-left: 1.222em;
+  padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
   padding-bottom: 0.2em;
 
 }
