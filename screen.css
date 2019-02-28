@@ -22,13 +22,13 @@ html {
   font-family: 'Merriweather', sans-serif;
   font-size: 1.25em;
 }
-.intro{
-   text-align: center;
-   font-size: 50px;
-   font-weight: bold;
-   padding: 5%;
-   color: #ff0000;
-   background-color: purple;
+.intro {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 5%;
+    color: #ff0000;
+    background-color: purple;
 }
 
 #info {
@@ -81,10 +81,9 @@ input[type="submit"]{
   background-color: #0F27DB;
 }
 
-input[="submit"] {
-  background-color: rgba(255, 152, 85, 5);
+input[type="submit"]:disabled {
+  background-color: #202A78;
 }
-
 
 /*Responsive image Style*/
 img {
