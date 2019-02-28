@@ -49,7 +49,7 @@ h2 {      /* 18 * 120% = 21.6px/18px */
 }
 
 p {
-  font-size: 1.125em;   /* 18px */
+  font-size: 1em;   /* 18px */
   padding-left: 0.22222222em;
   padding-right: 1.2222222em;
 }
