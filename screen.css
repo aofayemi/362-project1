@@ -95,6 +95,7 @@ img {
   box-sizing: border-box;
   padding-left: 0.2222em;
 }
+/* media screen for 600px */
 @media screen and(min-width: 600px) {
   img {
     display: block;
