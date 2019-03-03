@@ -19,8 +19,8 @@ https://www.modularscale.com/?18&px&1.618
 /*About element styles*/
 
 html {
-  font-family: 'Merriweather', sans-serif;
-  font-size: 1.25em;   /* 22 / 18 = 1.222222 */
+  font-family: Georgia, serif;
+
 }
 .intro {
   text-align: center;
@@ -97,6 +97,9 @@ img {
 }
 /* media screen for 600px */
 @media screen and(min-width: 600px) {
+  html {
+    font-size: 1.25em;   /* 22 / 18 = 1.222222 */
+  }
   img {
     display: block;
     max-width: 50%;
