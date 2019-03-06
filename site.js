@@ -72,13 +72,14 @@
     // listen for keyup event anywhere in the formed
     signup_input.addEventListener('keyup', function(){
       var contact_value = contact_input.value;
+      var contact_error = document.querySelector('#contact-error');
       // Disable signup button if either email or phone number is filled.
       if (validate_us_phone(contact_value) || validate_email(contact_value)) {
         signup_submit.removeAttribute('disabled');
       }
       else {
         // show user error message
-        var contact_error = document.querySelector('#contact-error');
+
         if(contact_value.length > 10 && contact_error.innerText.length === 0) {
           contact_error.innerText = 'You need a ten-digit phone or valid email address.';
         }
